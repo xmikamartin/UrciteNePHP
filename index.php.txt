@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Echo</title>
+    </head>
+    <body>
+        <?php
+$string = "za tohle dostanu asi za<br>";
+echo $string;
+$znamka = 5;
+echo $znamka;
+print "<br>";
+$realnaznamka = 4.99;
+echo $realnaznamka;
+$opravdujidostnu = true;
+  if (false)  { 
+      print ".<br> no to teda ne";
+     
+} 
+if (true)  { 
+      print ".<br> Ano tohle Boolean jen to nevidite";
+     
+} 
+$možná = 1;
+$text = '<br>možná dostanu za ' . $možná . ' snad.';
+echo $text;
+echo "<img src='https://www.emojimeanings.org/wp-content/uploads/2016/03/fml.png' />";
+echo "<br>tak nějaký text \\ aby bylo vidět že to fachčí<br>";
+$a = 8;
+$b = 4;
+var_dump($b+$a);
+print "<br>";
+var_dump($b-$a);
+print "<br>";
+var_dump($b/$a);
+print "<br>";
+var_dump($b*$a);
+print "<br>";
+var_dump($b++);
+print "<br>";
+var_dump(-$b);
+print "<br>";
+var_dump($b+=$a);
+print "<br>";
+var_dump($b-=$a);
+print "<br>";
+var_dump($b*=$a);
+print "<br>";
+var_dump($b/=$a);
+print "<br>";
+var_dump($b==$a);
+print "<br>";
+var_dump($b!=$a);
+print "<br>";
+var_dump($b>$a);
+print "<br>";
+var_dump($b<$a);
+print "<br>";
+var_dump($b||$a);
+print "<br>";
+var_dump($b&&$a);
+print "<br>";
+var_dump(!$b+$a);
+print "<br>";
+
+        ?>
+    </body>
+</html>
