@@ -7,6 +7,10 @@
     </head>
     <body>
         <?php
+require 'tracy/tracy.phar';
+use Tracy\Debugger;
+Debugger::enable();
+Debugger::$strictMode = true;
 $string = "za tohle dostanu asi za<br>";
 echo $string;
 $znamka = 5;
@@ -30,41 +34,41 @@ echo "<img src='https://www.emojimeanings.org/wp-content/uploads/2016/03/fml.png
 echo "<br>tak nějaký text \\ aby bylo vidět že to fachčí<br>";
 $a = 8;
 $b = 4;
-var_dump($b+$a);
+dump($b+$a);
 print "<br>";
-var_dump($b-$a);
+dump($b-$a);
 print "<br>";
-var_dump($b/$a);
+dump($b/$a);
 print "<br>";
-var_dump($b*$a);
+dump($b*$a);
 print "<br>";
-var_dump($b++);
+dump($b++);
 print "<br>";
-var_dump(-$b);
+dump(-$b);
 print "<br>";
-var_dump($b+=$a);
+dump($b+=$a);
 print "<br>";
-var_dump($b-=$a);
+dump($b-=$a);
 print "<br>";
-var_dump($b*=$a);
+dump($b*=$a);
 print "<br>";
-var_dump($b/=$a);
+dump($b/=$a);
 print "<br>";
-var_dump($b==$a);
+dump($b==$a);
 print "<br>";
-var_dump($b!=$a);
+dump($b!=$a);
 print "<br>";
-var_dump($b>$a);
+dump($b>$a);
 print "<br>";
-var_dump($b<$a);
+dump($b<$a);
 print "<br>";
-var_dump($b||$a);
+dump($b||$a);
 print "<br>";
-var_dump($b&&$a);
+dump($b&&$a);
 print "<br>";
-var_dump(!$b+$a);
+dump(!$b+$a);
 print "<br>";
- $MartinMika1 = 1;
+$MartinMika1 = 1;
 $MartinMika2 = 1;
 
 if ($MartinMika1 == 1)
@@ -103,7 +107,7 @@ if ($MartinMika1==2)
 echo " <br>";
 $LegoKostky = array(1 => "Červená",2 => "Zelená" ,3 => "Černá",4 => "Bílá",5 => "Fialová",
 6 =>"Růžová",7 => "Tirkysový",8 => "Oranžová",9 => "Žlutá",10 =>"Modrá");
-var_dump($LegoKostky);
+dump($LegoKostky);
 echo "<br>";
 echo "<br>";
 echo "<br>";
@@ -186,7 +190,6 @@ $Smartphone = array
      "Hodnocení" => "Vyššý",
      "Dostupnost" => "Ano",),    
     )));
-
         ?>
     </body>
 </html>
