@@ -190,6 +190,32 @@ $Smartphone = array
      "Hodnocení" => "Vyššý",
      "Dostupnost" => "Ano",),    
     )));
+echo "<table border=\"1\">";
+for($radekJmenoPrijmeni = 1; $radekJmenoPrijmeni < 12; $radekJmenoPrijmeni ++){
+echo "<tr>";
+for($sloupecJmenoPrijmeni = 1; $sloupecJmenoPrijmeni < 19; $sloupecJmenoPrijmeni ++){
+echo "<td>$sloupecJmenoPrijmeni - $radekJmenoPrijmeni </td>";}
+echo "</tr>";}
+echo "</table>";
+echo "Matematické<br>";
+echo(abs(-3) . "<br>");
+echo(ceil(2.5) . "<br>");
+echo "Řetězové<br>";
+$zkouška = addslashes('A co to mám  "rozdělit" teda ?');
+echo"$zkouška<br>"; 
+echo strrev("Co to je ?");
+echo "<br>";
+foreach ( $LegoKostky as $klíč => $hodnota )
+{
+echo "$klíč=$hodnota<br>";
+}
+Echo "Rod Blecků<br>";
+function Jméno($Jméno, $věk) {
+  echo("$Jméno Black <br>".ceil($věk)."<br>");
+}
+Jméno("Jenet","6.5");
+Jméno("Catarina","24,5");
+Jméno("Thomas","28,3"); 
         ?>
     </body>
 </html>
